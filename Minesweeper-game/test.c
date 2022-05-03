@@ -5,21 +5,21 @@
 void game()
 {
 	
-	//布置雷的信息
-	//1、布置好雷的信息
+	//虏录脰脙脌脳碌脛脨脜脧垄
+	//1隆垄虏录脰脙潞脙脌脳碌脛脨脜脧垄
 	char mine[ROWS][COLS] = { 0 };//11*11
-	//2、布置好排雷的信息
+	//2隆垄虏录脰脙潞脙脜脜脌脳碌脛脨脜脧垄
 	char show[ROWS][COLS] = { 0 };
-	//初始化棋盘
+	//鲁玫脢录禄炉脝氓脜脤
 	InitBoard(mine, ROWS, COLS,'0');
 	InitBoard(show, ROWS, COLS,'*');
-	//打印棋盘
+	//麓貌脫隆脝氓脜脤
 	//DisPalyBoard(mine, ROW, COL);
 	DisPalyBoard(show, ROW, COL);
-	//布置雷
+	//虏录脰脙脌脳
 	IsMine(mine, ROW, COL);
 	DisPalyBoard(mine, ROW, COL);
-	//扫雷
+	//脡篓脌脳
 	FindMine(mine, show, ROW, COL);
 	
 }
@@ -27,7 +27,7 @@ void game()
 void menu()
 {
 	printf("##################################\n");
-	printf("#######    1.进入扫雷        #####\n");
+	printf("#######    1.陆酶脠毛脡篓脌脳        #####\n");
 	printf("#######    2.exit            #####\n");
 	printf("##################################\n");
 }
@@ -39,7 +39,7 @@ void test()
 	do
 	{
 		menu();
-		printf("请选择<-:");
+		printf("脟毛脩隆脭帽<-:");
 		scanf("%d", &input);
 		switch (input)
 		{
@@ -47,10 +47,10 @@ void test()
 			game();
 			break;
 		case 0:
-			printf("你已退出游戏\n");
+			printf("脛茫脪脩脥脣鲁枚脫脦脧路\n");
 			break;
 		default:
-			printf("你的选择错误，请重新选择\n");
+			printf("脛茫碌脛脩隆脭帽麓铆脦贸拢卢脟毛脰脴脨脗脩隆脭帽\n");
 			break;
 		}
 	} while (input);
@@ -60,4 +60,5 @@ int main()
 {
 	test();
 	return 0;
+
 }
